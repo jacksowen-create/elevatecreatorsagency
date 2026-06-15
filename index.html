@@ -279,8 +279,10 @@
 
             <div class="section-label" style="margin-bottom: 25px; text-align: left;">Application For Representation</div>
             
-            <!-- DROP YOUR FORMSPREE URL INSIDE THE ACTION ATTRIBUTE BELOW -->
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://web3forms.com" method="POST">
+
+                <!-- Remember to replace 'YOUR_ACCESS_KEY_HERE' with your Web3Forms key -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
                 <div class="form-group">
                     <label for="legal-name">Legal Full Name</label>
@@ -299,4 +301,3 @@
 
                 <div class="form-group">
                     <label for="revenue">Current Monthly Net Revenue</label>
-                    <select id="revenue" name="monthly_revenue" required>
