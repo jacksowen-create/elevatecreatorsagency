@@ -281,9 +281,6 @@
             
             <form action="https://web3forms.com" method="POST">
 
-                <!-- Remember to replace 'YOUR_ACCESS_KEY_HERE' with your Web3Forms key -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-
                 <div class="form-group">
                     <label for="legal-name">Legal Full Name</label>
                     <input type="text" id="legal-name" name="legal_name" required placeholder="e.g., Jane Smith">
@@ -301,3 +298,5 @@
 
                 <div class="form-group">
                     <label for="revenue">Current Monthly Net Revenue</label>
+                    <select id="revenue" name="monthly_revenue" required>
+                        <option value="" disabled selected>Select your revenue range</option>
