@@ -174,7 +174,7 @@
             letter-spacing: 1px;
         }
 
-        input, select {
+        input {
             width: 100%;
             padding: 14px;
             background-color: #111111;
@@ -185,15 +185,9 @@
             transition: border-color 0.3s ease;
         }
 
-        input:focus, select:focus {
+        input:focus {
             outline: none;
             border-color: #D4AF37;
-        }
-
-        /* Action layout box wrapper */
-        .form-actions {
-            margin-top: 30px;
-            width: 100%;
         }
 
         /* Luxury CTA Button */
@@ -210,7 +204,7 @@
             border-radius: 4px;
             cursor: pointer;
             transition: opacity 0.3s ease;
-            display: block;
+            margin-top: 10px;
         }
 
         .submit-btn:hover {
@@ -223,7 +217,7 @@
             color: #555555;
             font-size: 0.8rem;
             border-top: 1px solid #111111;
-            margin-top: 40px;
+            margin-top: 6px;
         }
 
         /* Responsive Scaling for Mobile Screens */
@@ -285,7 +279,7 @@
 
             <div class="section-label" style="margin-bottom: 25px; text-align: left;">Application For Representation</div>
             
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://web3forms.com" method="POST">
 
                 <div class="form-group">
                     <label for="legal-name">Legal Full Name</label>
@@ -304,3 +298,7 @@
 
                 <div class="form-group">
                     <label for="revenue">Current Monthly Net Revenue</label>
+                    <input type="text" id="revenue" name="monthly_revenue" required placeholder="e.g., £5,000">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application for Review</button>
