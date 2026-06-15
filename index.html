@@ -122,6 +122,30 @@
             font-size: 0.95rem;
         }
 
+        /* Process Grid styling */
+        .process-container {
+            margin-bottom: 45px;
+            border-bottom: 1px solid #1A1A1A;
+            padding-bottom: 25px;
+        }
+
+        .process-step {
+            margin-bottom: 20px;
+        }
+
+        .process-step h4 {
+            color: #D4AF37;
+            font-size: 1rem;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .process-step p {
+            color: #A0A0A0;
+            font-size: 0.95rem;
+        }
+
         /* Intake Form Section */
         .form-section {
             padding: 100px 5%;
@@ -207,13 +231,11 @@
 <body>
 
     <header>
-    <div class="logo">ELEVATE CREATORS AGENCY</div>
-</header>
-
-
+        <div class="logo">ELEVATE CREATORS AGENCY</div>
+    </header>
 
     <section class="hero">
-        <h1>Institutional Infrastructure For <span>Elite Digital Content Creators</span></h1>
+        <h1>Institutional Infrastructure & <span>Full-Service Management</span> For Elite Digital Content Creators</h1>
         <p class="subheadline">We partner exclusively with established models on OnlyFans and Fanvue to transition independent creators into optimized corporate operations, maximizing equity and scale.</p>
     </section>
 
@@ -222,7 +244,7 @@
         <div class="services-grid">
             <div class="service-card">
                 <h3>Omnichannel Traffic Systems</h3>
-                <p>We build, seed, and manage engineered distribution models across TikTok, Instagram Reels, and Reddit. Our content scaling framework guarantees high-intent, algorithmic lead routing straight to your platforms without relying on temporary trends.</p>
+                <p>We build, seed, and manage engineered distribution models across TikTok, Instagram Reels, Snapchat Spotlight, Telegram, and Reddit. Our content scaling framework guarantees high-intent, algorithmic lead routing straight to your platforms without relying on temporary trends.</p>
             </div>
             <div class="service-card">
                 <h3>Monetization & Chat Infrastructure</h3>
@@ -230,19 +252,36 @@
             </div>
             <div class="service-card">
                 <h3>Operational & Asset Protection</h3>
-                <p>Complete structural shielding for your brand. Our legal and administration team handles 24/7 global DMCA copyright enforcement, secure data governance, financial structuring compliance, and algorithmic risk mitigation.</p>
+                <p>Complete structural shielding for your brand. Our legal and administration team handles 24/7 global DMCA copyright enforcement, advanced regional geo-blocking to ensure 100% discretion and hometown privacy, financial structuring compliance, and algorithmic risk mitigation.</p>
             </div>
         </div>
     </section>
 
     <section class="form-section">
         <div class="form-container">
+            
+            <!-- Sleek 3-Step Process Framework -->
+            <div class="section-label" style="margin-bottom: 25px; text-align: left;">Corporate Intake Pipeline</div>
+            <div class="process-container">
+                <div class="process-step">
+                    <h4>1. Data Evaluation</h4>
+                    <p>Submit your active creator footprint securely via our structured review protocol below.</p>
+                </div>
+                <div class="process-step">
+                    <h4>2. Operational Alignment</h4>
+                    <p>We build a bespoke traffic architecture and custom geo-privacy protection model around your brand.</p>
+                </div>
+                <div class="process-step">
+                    <h4>3. Complete Execution</h4>
+                    <p>You maintain a singular focus on content production while our infrastructure absorbs 100% of daily logistics.</p>
+                </div>
+            </div>
+
             <div class="section-label" style="margin-bottom: 25px; text-align: left;">Application For Representation</div>
             
             <!-- DROP YOUR FORMSPREE URL INSIDE THE ACTION ATTRIBUTE BELOW -->
             <form action="https://api.web3forms.com/submit" method="POST">
 
-                
                 <div class="form-group">
                     <label for="legal-name">Legal Full Name</label>
                     <input type="text" id="legal-name" name="legal_name" required placeholder="e.g., Jane Smith">
@@ -261,27 +300,3 @@
                 <div class="form-group">
                     <label for="revenue">Current Monthly Net Revenue</label>
                     <select id="revenue" name="monthly_revenue" required>
-                        <option value="" disabled selected>Select baseline performance tier</option>
-                        <option value="0-1k">Under £1,000 / month</option>
-                        <option value="1k-5k">£1,000 – £5,000 / month</option>
-                        <option value="5k-10k">£5,000 – £10,000 / month</option>
-                        <option value="10k+">Exceeding £10,000 / month</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="whatsapp">Direct WhatsApp Number</label>
-                    <input type="tel" id="whatsapp" name="whatsapp_contact" required placeholder="e.g., +44 7123 456789">
-                </div>
-
-               <button type="submit" class="submit-btn">Submit Application for Review</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Elevate Creators Agency Ltd. All rights reserved. Registered Business Entity (United Kingdom). Corporate advisory and digital talent distribution.
-    </footer>
-
-</body>
-</html>
