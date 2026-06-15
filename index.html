@@ -190,6 +190,12 @@
             border-color: #D4AF37;
         }
 
+        /* Action layout box wrapper */
+        .form-actions {
+            margin-top: 30px;
+            width: 100%;
+        }
+
         /* Luxury CTA Button */
         .submit-btn {
             width: 100%;
@@ -204,7 +210,7 @@
             border-radius: 4px;
             cursor: pointer;
             transition: opacity 0.3s ease;
-            margin-top: 10px;
+            display: block;
         }
 
         .submit-btn:hover {
@@ -217,7 +223,7 @@
             color: #555555;
             font-size: 0.8rem;
             border-top: 1px solid #111111;
-            margin-top: 6px;
+            margin-top: 40px;
         }
 
         /* Responsive Scaling for Mobile Screens */
@@ -279,7 +285,7 @@
 
             <div class="section-label" style="margin-bottom: 25px; text-align: left;">Application For Representation</div>
             
-            <form action="https://web3forms.com" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
 
                 <div class="form-group">
                     <label for="legal-name">Legal Full Name</label>
@@ -298,6 +304,3 @@
 
                 <div class="form-group">
                     <label for="revenue">Current Monthly Net Revenue</label>
-                    <input type="text" id="revenue" name="monthly_revenue" required placeholder="e.g., £5,000">
-                </div>
-
